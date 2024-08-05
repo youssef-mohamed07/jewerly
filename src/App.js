@@ -1,24 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import MoissaniteRingsPage from './components/Hero';
+import EthicalRingsPage from './pages/Rings';
+import PopularDesigns from './pages/Items';
+import CertificationsAndGuarantees from './pages/Certifcate';
+import Popular from './pages/Review';
+import Photo from './pages/Photo';
+import Footer from './pages/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+        <MoissaniteRingsPage/>
+        <EthicalRingsPage/>
+        <PopularDesigns/>
+        <CertificationsAndGuarantees/>
+        <Popular/>
+        <Photo/>
+        <Footer/>
+
+    </>
+  
   );
 }
 
